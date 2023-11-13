@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+}
+
+header{
+    display: flex;
+
+    background-color: #140505;
+    
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    height: 60px;
+    
+    
+}
+header a{
+    text-decoration: none;
+    text-shadow: 2px;
+    color:white;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px;
+
+}
+header form input{
+    border-radius: 30px;
+}
