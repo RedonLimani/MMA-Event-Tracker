@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    margin: 0;
+    background-color: #000000;
+    padding: 15px 15px 15px 5px;
+}
+
+header>.row{
+    max-width: 1170px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header>.row>a{
+    background-color: rgb(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 14%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+header>.row>a:hover{
+    color: rgb(179, 45, 45);
+}
+
+#search{
+    width: 14%;
+    border: none;
+    padding-left: 2px;
+    border-bottom: 2px solid #e91e32;
+    transition: all 0.1s ease;
+}
+
+#search:hover{
+    background-color: rgb(255, 242, 242); 
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+main{
+    margin: 30px 10px 10px 10px;
+
+    padding: 25px 50px 75px 100px;
+
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+footer{
+    margin: 0;
+    background-color: black;
+    padding: 70px 0px;
+}
+
+footer>.container{
+    max-width:1170px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-column{
+    width: 33%;
+    padding: 0 15px;
+}
+
+.footer-column>h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-column>h4::before{
+    content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e32;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+} /* qikjo osht qajo vija dekoruse perfuni h4*/ 
+
+.footer-column>ul>li:not(:last-child){
+	margin-bottom: 5px;
+}
+
+.footer-column>ul>li>a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(225, 225, 225);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-column>ul>li>a:hover{
+    color: rgb(179, 45, 45);
+    padding-left: 9px;
+}
+
+.footer-column>.SocialLinks-section>a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(179, 45, 45, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(179, 45, 45);
+    transition: all 0.3s ease;
+}
+
+.footer-column>.SocialLinks-section>a:hover{
+    color: white;
+    background-color: rgb(179, 45, 45);
+}
+
+
+/* E bojna responsive tash */
+@media(max-width: 767px){
+    .footer-column{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 565px){
+    .footer-column{
+        width: 100%;
+    }
+}
