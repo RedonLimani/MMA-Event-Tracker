@@ -26,6 +26,14 @@ header>.row{
     margin: auto;
 }
 
+#logo{
+    color: gold;
+    font-family: cursive;
+    font-style: italic;
+    font-style: bold;
+    font-weight: 800;
+}
+
 a{
     text-decoration: none;
 }
@@ -43,42 +51,47 @@ header>.row>a{
 }
 
 header>.row>a:hover{
-    color: rgb(179, 45, 45);
+    color: rgb(224, 191, 0);
 }
 
-#search{
+.dropdown{
     width: 14%;
-    border: none;
-    padding-left: 2px;
-    border-bottom: 2px solid #e91e32;
-    transition: all 0.1s ease;
+    position: relative;
+    padding-left: 2.25%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-#search:hover{
-    background-color: rgb(255, 242, 242); 
-}
-
-input:focus{
-    outline: none;
-}
-
-input:focus::placeholder {
-    color: transparent;
-}
-
-input::placeholder{
+.dropdown p{
+    background-color: rgb(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 14%;
     text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
-main{
-    margin: 30px 10px 10px 10px;
-
-    padding: 25px 50px 75px 100px;
-
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 5px;
+.dropdown p:hover{
+    color: gold;
 }
 
 footer{
@@ -115,7 +128,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e32;
+	background-color: brown;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -136,7 +149,7 @@ ul{
 }
 
 .footer-column>ul>li>a:hover{
-    color: rgb(179, 45, 45);
+    color: gold;
     padding-left: 9px;
 }
 
@@ -144,18 +157,18 @@ ul{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgb(179, 45, 45, 0.2);
+    background-color: rgb(231, 196, 0, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: rgb(179, 45, 45);
+    color: gold;
     transition: all 0.3s ease;
 }
 
 .footer-column>.SocialLinks-section>a:hover{
     color: white;
-    background-color: rgb(179, 45, 45);
+    background-color: gold;
 }
 
 
